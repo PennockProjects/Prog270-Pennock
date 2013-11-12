@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html ng-app="pennockApp">
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta name="description" content="Presidents Theseus and the Minotaur"/>
+	<meta name="author" content="John Pennock"/>
+
+	<title>Theseus and the President's Minotaur</title>
+	<link rel="shortcut icon" href="favicon.png"/>
+	<!-- Bootstrap core CSS -->
+	<link href="bootstrap.css" rel="stylesheet"/>
+	<!-- Custom styles for this template -->
+	<link href="index.css" rel="stylesheet" />
+	<!-- Latest compiled and minified JavaScript - Move to bottom of body element -->
+	<script src="//code.jquery.com/jquery.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+	<script src="index.js"></script>
+	<script src="angular.js"></script>
+	<script src="angular-resource.js"></script>
+	<script src="MongoData.js"></script>
+</head>
+<body>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+	  <div class="container">
+		<div class="navbar-header">
+		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		  </button>
+		  <a class="navbar-brand" href="#">Pennock-Week07-Midterm</a>
+		</div>
+		<div class="navbar-collapse collapse">
+		  <ul class="nav navbar-nav">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="About.html">About</a></li>
+			<li><a href="Contacts.html">Contact</a></li>
+			<li class="active"><a href="presidents.html">Mongo Presidents</a></li>
+			<li class="dropdown">
+			  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+			  <ul class="dropdown-menu">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="About.html">About</a></li>
+				<li><a href="Contacts.html">Contacts</a></li>
+				<li class="active"><a href="presidents.html">Mongo Presidents</a></li>
+			  </ul>
+			</li>
+		  </ul>
+		</div><!--/.navbar-collapse -->
+	  </div>
+	</div>
+
+	<div class="container">
+		<div class="starter-template">
+
+			<h1>Animated Image</h1>
+			<div id='drawHere01' class='draw-target'></div>				
+			<div class="row"> </div>
+
+			<h1>Mongo Database Access</h1>
+			<div id="monogoData" ng-controller="MyController">
+				<p>This project retrieves a small amount of JSON from
+				a node server.</p>
+				<p>Rows in DB: {{presidentsLength}}</p>
+				<ul>
+					<li ng-repeat="president in presidents">
+						<p>{{president.getPresidentName()}}<br/>
+							TermStart: {{president.getTermStart()}}<br/>
+							TermEnd: {{president.getTermEnd()}}</p>
+					</li>
+				</ul>
+				<div ng-bind-html-unsafe="hint"></div>
+			</div>
+		</div>
+
+	</div><!-- /.container -->
+
+</body>
+</html>
