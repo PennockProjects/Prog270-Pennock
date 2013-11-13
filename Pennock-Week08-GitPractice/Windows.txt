@@ -1,0 +1,15 @@
+ Volume in drive C has no label.
+ Volume Serial Number is FE4A-DD6A
+
+ Directory of C:\Dev\Git\Prog270-Pennock\Pennock-Week08-GitPractice
+
+11/12/2013  05:42 PM                20 Test01.md
+11/12/2013  05:43 PM                20 Test02.md
+11/12/2013  05:47 PM               280 .project
+11/12/2013  05:56 PM    <DIR>          images
+11/12/2013  06:05 PM               436 CloudNine.txt
+11/12/2013  06:06 PM    <DIR>          ..
+11/12/2013  06:06 PM                 0 Windows.txt
+11/12/2013  06:06 PM    <DIR>          .
+               5 File(s)            756 bytes
+               3 Dir(s)  66,570,674,176 bytes free
