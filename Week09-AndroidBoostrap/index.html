@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<html ng-app="elvenApp">
+	<head>
+		<meta charset="utf-8" />
+		<title>Pennock-Week09-AngularBootstrap</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="Images/favicon.png">
+		<!-- Latest compiled and minified CSS -->
+		<link href="Style/bootstrap.css" rel="stylesheet" >
+		<!-- link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet" -->
+		<!-- Optional theme -->
+		<link href="Style/Carousel.css" rel="stylesheet" type="text/css" />
+		<link href="Style/index.css" rel="stylesheet" type="text/css" />
+		<!-- Latest compiled and minified JavaScript - Move to bottom of body element -->
+		<script src="Source/jquery.js"></script>
+		<script src="Source/bootstrap.min.js"></script>
+		<script src="Source/angular.js"></script>
+		<script src="Source/angular-resource.js"></script>
+		<script src="Source/MongoData.js"></script>
+		<script src="Source/index.js"></script>
+		
+	</head>
+	<body>
+		
+		<!-- Nav Bar
+		================================================== -->
+
+		<div class="navbar-wrapper">
+		<div class="container">
+
+		<div class="navbar navbar-inverse navbar-static-top">
+		  <div class="container">
+			<div class="navbar-header">
+			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="icon-bar"> </span>
+				<span class="icon-bar"> </span>
+				<span class="icon-bar"> </span>
+			  </button>
+			  <a class="navbar-brand" href="#">Pennock-Week09-AngularBootstrap</a>
+			</div>
+			<div class="navbar-collapse collapse">
+			  <ul class="nav navbar-nav">
+				<li class="active"><a href="index.html">Home</a></li>
+				<li><a href="Books.html">Books</a></li>
+				<li><a href="Plus.html">Plus</a></li>
+				<li class="dropdown">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+				  <ul class="dropdown-menu">
+					<li class="active"><a href="index.html">Home</a></li>
+					<li><a href="Books.html">Books</a></li>
+					<li><a href="Plus.html">Plus</a></li>
+				  </ul>
+				</li>
+			  </ul>
+			</div>
+		  </div>
+		</div>
+
+		</div>
+		</div> <!-- Navbar wrapper -->
+				
+		<!-- Carousel
+        ================================================== -->
+        <div id="myCarousel" class="carousel slide">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="Images/Image140X140A.png"#777:#7a7a7a alt="First slide">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Click to see the <a href="#feature01">Android Asus Customization01</a></h1>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="Images/Image140X140B.png" alt="Second slide">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Click to see the <a href="#feature02">Air Droid</a></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="Images/Image140X140C.png" alt="Third slide">
+                    <div class="container">
+                        <div class="carousel-caption">
+                            <h1>Click to see the <a href="#feature03">Twitter on Android</a></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="carousel-arrows">&#5595;</span></a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="carousel-arrows">&#5593;</span></a>
+        </div><!-- /.carousel -->
+
+
+		<div class="container">
+			<div class="jumbotron">ASUS MeMO Pad HD 7</div>
+			<table>
+				<tr><th>Key Features</th></tr>
+				<tr><td>7-inch HD tablet with a wide-view angle IPS display</td></tr>
+				<tr><td>Rear 5MP and front 1.2MP dual cameras</td></tr>
+				<tr><td>Ultra light, weighs only 302g</td></tr>
+			</table>
+			<div class="starter-template">
+				<h1>Android Tablets</h1>
+				<p class="lead">On this page you will find information about my experiences with an Asus Memo Pad (ASUS ME173x).</p>
+			</div>
+
+ <!-- START THE FEATURETTES -->
+
+      <hr id="feature01" class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Android Customizations. <span class="text-muted">Feature 01.</span></h2>
+          <p class="lead">This page was added to the Android Settings by Asus, the company that makes
+          this tablet. Here you can tweak various options, such as screenshots, gamer options, power options,
+          scrolling options, and Asus specific hardware such as the trans cover. To see a full sized image, right 
+          click the image and choose <strong>View Image</strong> or <strong>Open image in new tab</strong>.
+          </p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="https://googledrive.com/host/0B1pGBKYyP0gdZ2owNTV3SjdlU00/ScreenShot01.jpg" alt="ScreenShot01.jpg" >
+        </div>
+      </div>
+
+
+      <hr  id="feature02" class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="https://googledrive.com/host/0B_TaiJX3kYoTZW9SQUdpOW5HbDA/airdroid.jpg" alt="screenshot of the Air Droid App" >
+        </div>
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Air Droid<span class="text-muted"> a great way to control your device</span></h2>
+          <p class="lead">With Air Droid you can access your Android device from your laptop.  Once you're logged in, you can access your contacts, apps, and all sorts of other information on your phone.
+
+<a href=" http://download.cnet.com/AirDroid-for-Android/3000-2248_4-75627578.html#ixzz2mOAnuMd8">Read more or download AirDroid for Android at CNET Download.com</a></p>
+
+        </div>
+      </div>
+
+      <hr  id="feature03" class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Twitter on Android <span class="text-muted">Feature 01.</span></h2>
+          <p class="lead">This is a screen shot of the twitter application I added to the Asus Memo Pad via the 
+          	Google Play store.  The ubiquity of Android ensures that all the most popular social media apps are 
+          	available and useful.
+          </p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive" src="https://googledrive.com/host/0B_TaiJX3kYoTZW9SQUdpOW5HbDA/twitter.jpg" alt="screenshot of twitter on Asus Memo Pad" >
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+		</div><!-- /.container -->
+
+	</body>
+</html>
